@@ -22,14 +22,13 @@ def find_mismatch(text):
 
 
 def main():
-    test=input()
-    if test=='I':
-        text = input()
-        mismatch = find_mismatch(text)
-        if (mismatch==-1):
-            print('Success')
-        else:
-            print(mismatch)
+    text = input()
+    text = text.replace("I\r\n", "")
+    mismatch = find_mismatch(text)
+    if (mismatch==-1):
+        print('Success')
+    else:
+        print(mismatch)
 
 
 if __name__ == "__main__":
