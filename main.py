@@ -22,9 +22,8 @@ def find_mismatch(text):
 
 
 def main():
-    test = input()
-    if 'I' in test:
-        text=input()
+    text = input()
+    if 'I' == text[0]:
         mismatch = find_mismatch(text)
         if (mismatch==-1):
             print('Success')
