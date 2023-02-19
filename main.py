@@ -17,13 +17,13 @@ def find_mismatch(text):
 
         if next in ")]}":
             if not are_matching(opening_brackets_stack.pop(),next):
-                return i-4
+                return i+1
     return -1
 
 
 def main():
-    text = input()
-    if 'I' == text[0]:
+    test = input()
+    if 'I' == test[0]:
         text = input()
         mismatch = find_mismatch(text)
         if (mismatch==-1):
